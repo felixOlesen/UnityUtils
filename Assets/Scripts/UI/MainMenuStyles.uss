@@ -1,0 +1,30 @@
+:root {
+}
+
+.MainMenuButton {
+    -unity-font-style: bold;
+    font-size: 30px;
+    width: 250px;
+    color: rgb(210, 210, 210);
+    background-color: rgb(38, 38, 38);
+}
+
+.MainMenuTitleText {
+    font-size: 60px;
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    color: rgb(209, 209, 209);
+}
+
+.MainMenuButton:hover {
+    background-color: rgb(156, 156, 156);
+    color: rgb(22, 22, 22);
+}
+
+.MainMenuButton:focus {
+    background-color: rgb(57, 108, 53);
+    border-left-color: rgb(38, 38, 38);
+    border-right-color: rgb(38, 38, 38);
+    border-top-color: rgb(38, 38, 38);
+    border-bottom-color: rgb(38, 38, 38);
+}

@@ -199,7 +199,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -536,7 +536,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 31
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -806,7 +806,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -849,6 +849,26 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 6
       m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -932,8 +952,8 @@ Tilemap:
     m_RefCount: 0
     m_Data: {fileID: 11400000, guid: 9282781362f7f45d782ca3289c1c23d5, type: 2}
   - serializedVersion: 2
-    m_RefCount: 0
-    m_Data: {fileID: 11400000, guid: e008329d9ce1647f2aba4f382d25b638, type: 2}
+    m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: d96506d5652cd452ead293c26087d869, type: 2}
   - serializedVersion: 2
     m_RefCount: 2
     m_Data: {fileID: 11400000, guid: c17c9e6ab6dc04c2bb67405b4d4e5975, type: 2}
@@ -957,8 +977,8 @@ Tilemap:
     m_RefCount: 0
     m_Data: {fileID: 1256405768, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
   - serializedVersion: 2
-    m_RefCount: 0
-    m_Data: {fileID: -1605714765, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
+    m_RefCount: 2
+    m_Data: {fileID: 1544439891, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
   - serializedVersion: 2
     m_RefCount: 2
     m_Data: {fileID: -2092805383, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
@@ -967,7 +987,7 @@ Tilemap:
     m_Data: {fileID: -1011935894, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 9
+    m_RefCount: 11
     m_Data:
       e00: 1
       e01: 0
@@ -987,7 +1007,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - serializedVersion: 2
-    m_RefCount: 9
+    m_RefCount: 11
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1093,7 +1113,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1308,7 +1328,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2384,10 +2404,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1153624061}
-  - {fileID: 621351631}
   - {fileID: 181942418}
-  - {fileID: 387433433}
+  - {fileID: 621351631}
   - {fileID: 724236900}
+  - {fileID: 387433433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451560258
@@ -2559,7 +2579,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1834012764, guid: 98a495cda46b4474abe11e2c0b7520ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2570,7 +2590,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1571596116
 Transform:
   m_ObjectHideFlags: 0
@@ -2598,6 +2618,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1451560260}
+    - target: {fileID: 6051110466241097730, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c7d1a842e3c9449c390215b2e00ad33b, type: 3}
+    - target: {fileID: 6051110466241097730, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
+      propertyPath: m_UIInputModule
+      value: 
+      objectReference: {fileID: 9107474851398003899}
+    - target: {fileID: 6051110466241097730, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051110466241097730, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Keyboard&Mouse
+      objectReference: {fileID: 0}
     - target: {fileID: 7614420211024194119, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.38042
@@ -2647,12 +2683,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d30addb4c91434884a4f1c7ffe5f0578, type: 3}
+--- !u!1001 &9107474851398003898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988392973534761820, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146501557843111082, guid: c3b5234b80b824644930514d75470505, type: 3}
+      propertyPath: m_Name
+      value: PlayerEventSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3b5234b80b824644930514d75470505, type: 3}
+--- !u!114 &9107474851398003899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9096059592065928297, guid: c3b5234b80b824644930514d75470505, type: 3}
+  m_PrefabInstance: {fileID: 9107474851398003898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1451560261}
   - {fileID: 1426731957}
-  - {fileID: 390333781}
   - {fileID: 1571596116}
   - {fileID: 2025068658310588837}
+  - {fileID: 390333781}
+  - {fileID: 9107474851398003898}

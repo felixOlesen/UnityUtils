@@ -98,4 +98,10 @@ public class GridManager : MonoBehaviour
         }
         return matchingTileTypes;
     }
+
+    public bool IsPositionValid(Vector3 position) {
+        // Convert world position to cell position
+        Vector3Int cellPosition = tilemapLayers[0].tilemap.WorldToCell(position);
+        return gridNodes.ContainsKey(cellPosition);
+    }
 }

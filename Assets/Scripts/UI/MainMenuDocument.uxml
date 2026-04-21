@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=ea8c09f84c7364b3d918cb2d90373cfa&amp;type=3#MainMenuStyles"/>
+    <ui:VisualElement name="RootContainer" style="flex-grow: 1; align-items: center; justify-content: center; align-content: center; background-color: rgb(58, 58, 58);">
+        <ui:Label text="MAIN MENU" name="TitleText" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" class="MainMenuTitleText"/>
+        <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; height: 50%; max-height: 40%; justify-content: space-evenly; align-items: center; align-content: center;">
+            <ui:Button text="Start" name="StartButton" class="MainMenuButton"/>
+            <ui:Button text="Settings" name="SettingsButton" class="MainMenuButton"/>
+            <ui:Button text="Exit" name="ExitButton" class="MainMenuButton"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
