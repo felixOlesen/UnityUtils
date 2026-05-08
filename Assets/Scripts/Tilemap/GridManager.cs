@@ -36,6 +36,8 @@ public class GridManager : MonoBehaviour
     
     public Dictionary<Vector3Int, GridNode> gridNodes = new Dictionary<Vector3Int, GridNode>();
 
+    public float tileHeightOffset = 0.25f;
+
     void Awake() {
         // Create Singleton instance
         if (Singleton == null) {
@@ -99,9 +101,25 @@ public class GridManager : MonoBehaviour
         return matchingTileTypes;
     }
 
-    public bool IsPositionValid(Vector3 position) {
+    public bool IsPositionValid(Vector3 position, int tilemapIndex = 0) {
         // Convert world position to cell position
-        Vector3Int cellPosition = tilemapLayers[0].tilemap.WorldToCell(position);
+        Vector3Int cellPosition = tilemapLayers[tilemapIndex].tilemap.WorldToCell(position);
+        Debug.Log($"Position Validity Check {cellPosition}");
         return gridNodes.ContainsKey(cellPosition);
+    }
+
+    public Vector3Int GetPositionOnGrid(Vector3 position, int tilemapIndex = 0) {
+        return tilemapLayers[tilemapIndex].tilemap.WorldToCell(position);
+    }
+
+    public float FindTopTileHeightFromGridNode(Vector3 tilePosition, int tilemapIndex = 0) {
+        float tileHeight = 0f;
+        Vector3Int cellPosition = tilemapLayers[tilemapIndex].tilemap.WorldToCell(tilePosition);
+        if(gridNodes.ContainsKey(cellPosition)) {
+            // Add one to the index to avoid multiplying the offset by zero.
+            tileHeight = (float)(gridNodes[cellPosition].GetHighestCellIndex() + 1) * tileHeightOffset;
+            Debug.Log($"[Grid Manager] tile height: {tileHeight}");
+        } 
+        return tileHeight; 
     }
 }

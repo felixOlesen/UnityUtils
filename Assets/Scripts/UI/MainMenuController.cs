@@ -7,6 +7,13 @@ public class MainMenuController : MonoBehaviour
     public UIDocument mainMenuUIDocument;
     private VisualElement rootVisualElement;
 
+    public enum MenuState
+    {
+        MainMenu,
+        Settings,
+        Credits
+    }
+
     private Button startButton;
     private Button settingsButton;
     private Button exitButton;

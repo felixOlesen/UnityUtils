@@ -28,11 +28,20 @@ public class GridNode
             cellLayers = new List<CellLayer>();
         }
         cellLayers.Add(new CellLayer(tileTypes, cellLayerIndex));
-        Debug.Log($"Adding tile at {position} with cell layer count {cellLayers.Count}, with type count '{tileTypes.Count}' to cell layer index {cellLayerIndex}");
+        // Debug.Log($"Adding tile at {position} with cell layer count {cellLayers.Count}, with type count '{tileTypes.Count}' to cell layer index {cellLayerIndex}");
                     
     }
 
     public bool HasCellLayer() {
         return cellLayers != null && cellLayers.Count > 0;
+    }
+
+    public float GetHighestCellIndex() {
+        int cellIndex = 0;
+        if(HasCellLayer()) {
+            // TODO: if the tile is a half or quarter tyle, add checks for adjusting the height value accordingly
+            cellIndex = cellLayers[^1].cellLayerIndex;
+        }
+        return cellIndex;
     }
 }
