@@ -4,3 +4,4 @@ Currently working on creating tools for the Unity tilemap, along with creating r
 The next tasks can be seen below:
 - 2.5D game template
 - Settings Menu Boilerplate setup
+- Dialogue Management System
