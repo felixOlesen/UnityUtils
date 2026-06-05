@@ -5,3 +5,4 @@ The next tasks can be seen below:
 - 2.5D game template
 - Settings Menu Boilerplate setup
 - Dialogue Management System
+- Turn-based Strategy Mechanics, Fire Emblem-Style
